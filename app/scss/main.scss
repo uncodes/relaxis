@@ -1,0 +1,16 @@
+// Шрифты
+@import "_fonts";
+// Настройки
+@import "setup/index";
+// Шапка
+@import "blocks/_layout";
+// Навигация
+@import "blocks/_header";
+@import "blocks/_about";
+@import "blocks/_steps";
+@import "blocks/_advantages";
+@import "blocks/_get";
+@import "blocks/_aboutmeditation";
+@import "blocks/_scienceof";
+// Подвал
+@import "blocks/_footer";

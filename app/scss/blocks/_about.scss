@@ -1,0 +1,61 @@
+$pfx: "about";
+
+.#{$pfx} {
+  &__container {
+    margin-bottom: 170px;
+    padding: 164px 0 132px;
+    background-color: var(--secondary-color);
+    background-image: url('../images/about-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    @media screen and (max-width: 768px) {
+      padding: 50px 0 40px;
+      margin-bottom: 53px;
+    }
+    @media (min-width: 769px) and (max-width: 1399px) {
+      padding: 65px 0;
+      margin-bottom: 60px;
+    }
+  }
+  &__title {
+    margin-bottom: 51px;
+    text-align: center;
+    font-weight: 400;
+    color: var(--neutral-color-inverse);
+    line-height: 58px;
+    max-width: 1070px;
+    width: 100%;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 46px;
+      text-align: left;
+      font-size: 1rem;
+      line-height: 30px;
+    }
+    @media (min-width: 769px) and (max-width: 1399px) {
+      margin-bottom: 42px;
+      font-size: 2rem;
+      line-height: 38px;
+    }
+  }
+  &__desc {
+    text-align: center;
+    font-size: 1.625rem;
+    font-weight: 300;
+    color: var(--neutral-color-inverse);  
+    line-height: 46px;
+    max-width: 975px;
+    width: 100%;;
+    @media screen and (max-width: 768px) {
+      text-align: left;
+      font-size: 1rem;
+      line-height: 30px;
+      font-weight: 400;
+    }
+    @media (min-width: 769px) and (max-width: 1399px) {
+      font-size: 1rem;
+      line-height: 30px;
+    }
+  }
+}

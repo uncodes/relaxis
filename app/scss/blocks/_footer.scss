@@ -1,0 +1,108 @@
+$pfx: "footer";
+
+.#{$pfx} {
+  &__container {
+    margin-top: 136px;
+    padding-bottom: 118px;
+    width: 100%;
+    @media screen and (max-width: 1399px) {
+      margin-top: 54px;
+      padding-bottom: 44px;
+    }
+    &.mobile {
+      @media (min-width: 769px) {
+        margin-top: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px,1fr));
+    grid-gap: 48px;
+    width: 100%;
+    @media screen and (max-width: 1399px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &_item {
+    @media screen and (max-width: 1399px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .logo {
+      font-weight: 500;
+      margin-bottom: 60px;
+      color: var(--gray-color-400);
+      font-size: 1.5rem;
+      letter-spacing: 0.05em;
+      height: 40px;
+      width: 40px;
+      img {
+        margin-right: 19px;
+      }
+      @media screen and (max-width: 1399px) {
+        width: inherit;
+        img {
+          width: 40px;
+        }
+      }
+    }
+    &-title {
+      margin-bottom: 44px;
+      font-weight: 400;
+      color: var(--gray-color-400);
+      height: 40px;
+    }
+    &-minlist {
+      width: 100%;
+      @media screen and (max-width: 1399px) {
+        text-align: center;
+      }
+      li {
+        margin-bottom: 45px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        a {
+          font-size: var(--font-size-xs);
+          font-weight: 400;
+          color: var(--gray-color-400);
+        }
+      }
+    }
+    &-list {
+      max-width: 265px;
+      width: 100%;
+      li {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: solid 1px #F2F2F2;
+        &:hover {
+          a span {
+            transform: scale(0.8);
+          }
+        }
+        a {
+          font-size: var(--font-size-xs);
+          color: var(--gray-color-400);
+          span {
+            transition: 0.3s;
+            margin-right: 23px;
+            border-radius: 6px;
+            height: 46px;
+            width: 46px;
+            img {
+              height: 30px;
+            }
+          }
+        }
+        &:last-child {
+          margin-bottom: 0;
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+}

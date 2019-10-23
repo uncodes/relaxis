@@ -1,0 +1,35 @@
+:root {
+  // основные цвета
+  
+  --neutral-color: #333333; 
+  --neutral-color-inverse: #FFFFFF;
+
+  --gray-color-400: #828282;
+
+  --primary-color: #9FC94B;
+  --secondary-color: #FF9F5A;
+  --tertiary-color: #6DDBFF;
+
+  --background-color: #fff;
+
+  // settings
+
+  --border-radius: 8px;
+
+  // font-size
+  --font-size-xs: 1rem; // 16px
+  --font-size-sm: 1.125rem; // 18px
+  --font-size-base: 1.5rem; // 24px
+  --font-size-lg: 2.375rem; // 38px
+  --font-size-xl: 3.25rem; // 52px
+  --font-size-xxl: 4.5rem; // 72px
+
+  // gradients
+  --gradient-orange: linear-gradient(180deg, #FFCF87 0%, #FF964A 100%);
+  --gradient-pink: linear-gradient(180deg, #FFA8DA 0%, #FF8FD0 100%);
+  --gradient-blue: linear-gradient(180deg, #80DCFA 0%, #44C3ED 100%);
+  --gradient-red: linear-gradient(180deg, #FF9494 0%, #FD6060 100%);
+  --gradient-redlight: linear-gradient(180deg, #FFC8CF 0%, #F9A3AE 100%);
+  --gradient-yellow: linear-gradient(180deg, #FEE042 0%, #FFCC47 100%);
+  --gradient-green: linear-gradient(180deg, #BDF17B 0%, #8BCA3C 100%);
+}
